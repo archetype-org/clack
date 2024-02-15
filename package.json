@@ -1,0 +1,27 @@
+{
+  "name": "clack",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "a nodejs library for sending IPC commands to an Urbit ship over Conn.c",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archetype-org/clack.git"
+  },
+  "author": "hastyp-patmud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archetype-org/clack/issues"
+  },
+  "homepage": "https://github.com/archetype-org/clack#readme",
+  "dependencies": {
+    "@urbit/nockjs": "^1.1.0",
+    "pythonia": "^1.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

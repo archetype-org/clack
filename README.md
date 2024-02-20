@@ -34,6 +34,11 @@ import { sendKahn, Thread, parseThreadResponse } from '@archetype-org/clack'
 sendKahn({
 	ship: './path/to/your/zod',
 	hoon:  Thread(`
+=/  m  (strand ,vase)
+;<  ~  bind:m
+~&  (add 40 2)
+(poke [~zod %hood] %helm-hi !>(\'\'))
+(pure:m !>([%res 'success']))
 `),
 	responseParser: parseThreadResponse,
 })

@@ -7,7 +7,7 @@ a nodejs library for sending IPC commands to an Urbit ship over Conn.c
 To start using %clack in your node project install with npm:
 
 ```bash
-npm install --save @archetype-org/clack
+npm install --save-dev @archetype-org/clack
 ```
 
 ## Basic Usage

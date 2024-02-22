@@ -1,6 +1,6 @@
 {
   "name": "@archetype-org/clack",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "type": "module",
   "description": "a nodejs library for sending IPC commands to an Urbit ship over Conn.c",
   "main": "index.js",

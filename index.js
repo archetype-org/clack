@@ -51,6 +51,19 @@ function Clack({ ship }) {
         responseParser: parseThreadResponse
       })
     },
+    reviveDesk: async function (deskName) {
+      return await sendKahn({
+        ship,
+        noun: await Thread(`
+=/  m  (strand ,vase)
+;<  [=ship =desk =case]  bind:m  get-beak 
+;<  ~  bind:m  
+(poke-our %hood %kiln-revive !>(${deskName}))  
+(pure:m !>('success'))
+`),
+        responseParser: parseThreadResponse
+      })
+    },
     runThread: async function (thread, responseParser=parseThreadResponse) {
       return await sendKahn({
         ship,

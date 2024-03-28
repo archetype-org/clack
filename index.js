@@ -71,14 +71,19 @@ function Clack({ ship }) {
         responseParser,
       })
     },
-    close: async function(argument) {
+    close: async function() {
       python.exit()
     }
   }
 }
 
+function closeClack () {
+  python.exit()
+}
+
 export {
   Clack,
+  closeClack,
   primitiveToAtom,
   atomToPrimitive,
   newtDecode,

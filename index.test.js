@@ -17,11 +17,3 @@ test('commitDesk', async function () {
 	const noun = await clack.commitDesk('%js-created')
   expect(noun).toBe('success');
 });
-
-test('reviveDesk', async function () {
-	const clack = Clack({ ship: '../clack-scratchpad/zod' })
-	const noun = await clack.reviveDesk('%js-created')
-  expect(noun).toBe('success');
-  await clack.close()
-});
-

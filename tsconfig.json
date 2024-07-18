@@ -1,0 +1,26 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "sourceMap": true,
+    "strict": false,
+    "pretty": true,
+    "noImplicitAny": true,
+    "noErrorTruncation": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./node_modules/@types/*", "*"]
+    }
+  },
+  "include": ["lib", "src/index.ts", "src/bytes.ts", "src/khan.ts"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "esm": true
+  }
+}
